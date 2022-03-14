@@ -79,3 +79,44 @@ copia_dicionario = dicionario
 
 # Criando dicionário de forma não usual:
 dicionario = {}.fromkeys('chave', 'valor')
+
+# ======================================================Iterando um dicionário=======================================================================================
+
+# Como iterar um dicionário:
+
+# Aqui imprimimos as chaves:
+for chave in dicionario:
+    print(chave)
+
+# Aqui imprimimos os valores:
+for chave in dicionario:
+    print(dicionario[chave])
+
+# Aqui imprimimos tanto a chave quanto o valor:
+for chave in dicionario:
+    print(f'{chave} : {dicionario[chave]}')
+
+# ======================================================Desempacotando um dicionário=======================================================================================
+
+# Desempacotando dicionarios:
+print(dicionario.items())
+
+# ======================================================Acessando dados em um dicionário=======================================================================================
+
+# Como acessar todas as chaves:
+print(dicionario.keys())
+
+# Como acessar todos os valores:
+print(dicionario.values())
+
+# ======================================================Métodos de um dicionário=======================================================================================
+
+# Usando as funções soma(sum()), valor máximo(max()), valor mínimo(min()) e tamanho(len()):
+# OBS: Todos os valores precisam ser inteiros ou floats.
+print(sum(dicionario.values()))
+
+print(max(dicionario.values()))
+
+print(min(dicionario.valeus()))
+
+print(len(dicionario))
