@@ -26,3 +26,55 @@ def nome_funcao(parametros):
 
 # Ao utilizar o "Olá mundo" como parametro, a função irá printar esta string
 nome_funcao("Olá mundo")
+# =====================================================================================================================================================
+
+# Funções com retorno
+
+# É possível que a função retorne um valor após seu processamento, para isso, devemos utilizar o comando return.
+
+
+def funcao_com_retorno():
+    return 7+7
+
+# OBS: Para que haja o retorno da função, não necessariamente precisamos guardá-la em uma variável.
+
+# A palvra return finaliza a função, ou seja, ao retornar o valor, é findada a execução do código interno
+# Podemos retornar qualquer tipo de dado e múltiplos valores
+
+# É possível haver mais de um return na função:
+
+
+def funcao_multiplos_return(a):
+    if a == 0:
+        return 'True'
+    else:
+        return 'False'
+
+# =====================================================================================================================================================
+
+# Funções com parâmetro
+
+# Parâmetros são dados que a função irá receber para processar
+
+# É possível ter mais de um parâmetro
+
+
+def funcao_com_parametro(a, b):
+    return a+b
+
+# Diferença entre parâmetros e argumentos:
+# Parâmetros são as variáveis declaradas ao definir um função;
+# Argumentos são dados passados durante a execução da função;
+
+# OBS: A ordem dos parâmetros é extremamente importante;
+
+
+def funcao(numerador, divisor):
+    # Para que o calculo seja o esperado, deveremos informar primeiramente o numerador e após o divisor
+    return numerador/divisor
+
+
+# Argumentos nomeados(Keyword Arguments):
+# Ao informar o nome do parâmetro nos argumentos, não importará a ordem dos fatores
+
+print(funcao(numerador=4, divisor=2))
