@@ -77,4 +77,15 @@ def funcao(numerador, divisor):
 # Argumentos nomeados(Keyword Arguments):
 # Ao informar o nome do parâmetro nos argumentos, não importará a ordem dos fatores
 
-print(funcao(numerador=4, divisor=2))
+print(funcao(divisor=4, numerador=4))
+
+
+# Funções com parâmetro padrão
+
+# Funções em que receber um parâmetro não é obrigatório
+
+# ao alocar um valor no parametro, este passa a ser opcional, utilizando o valor alocado como padrão
+def funcao_com_parametro_padrao(numero, potencia=2):
+    return numero ** potencia
+
+# OBS: Os parâmetros padrões devem ser declarados por último, conforme exemplo acima, do contrário, a função gerará erro.
