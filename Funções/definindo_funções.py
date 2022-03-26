@@ -84,8 +84,46 @@ print(funcao(divisor=4, numerador=4))
 
 # Funções em que receber um parâmetro não é obrigatório
 
-# ao alocar um valor no parametro, este passa a ser opcional, utilizando o valor alocado como padrão
+# ao alocar um valor no parâmetro, este passa a ser opcional, utilizando o valor alocado como padrão
 def funcao_com_parametro_padrao(numero, potencia=2):
     return numero ** potencia
 
 # OBS: Os parâmetros padrões devem ser declarados por último, conforme exemplo acima, do contrário, a função gerará erro.
+
+# OBS2: É possível utilizar qualquer tipo de dado em parâmetros padrões
+
+# Escopo - Evitando problemas:
+
+## Variáveis Globais = Aquelas que se encontram no corpo principal do código:
+variavel_global = "Estou no corpo principal do código."
+
+## Variáveis Locais = Aquelas que se encontram no corpo da função:
+def exemplo_variavel_local(variavel_local):
+    print(variavel_local)
+
+# OBS: Caso ambas possuam o mesmo nome, a local terá preferência.
+
+# Podemos importar uma variável global, para dentro da nossa função, sem passá-la como argumento:
+variavel_importada = 0
+def importando_variavel():
+    global variavel_importada
+    """Docstring"""
+
+    variavel_importada = variavel_importada + 1
+    return variavel_importada
+
+
+# *Args:
+
+# *agrs é um parâmetro, podemos nomeá-lo de qualquer coisa, devendo iniciar por '*', ex: *parametro
+# Por convenção, o definimos como *args
+# Este parâmetro coloca os valores extras da entrada em uma tupla
+
+def teste_args(*args): # Ao nomeá-lo, utilizamos o *.
+    return sum(args) # Quando utilizamos no corpo da função, não precisamos do *
+
+# Caso queira passar os valores de uma coleção(lato sensu), iteradamente, para o args, utilize o * antes do nome da coleção:
+
+lista_numero = [1, 2 , 3, 4]
+
+teste_args(*lista_numero) # Dessas forma, antes de ser inserido no args, a lista será iterada.
