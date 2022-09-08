@@ -1,4 +1,4 @@
-# Conjuntos, em qualquer linguagem de programação, fazemos referência à Teoria dos conjuntos da matemática
+"""# Conjuntos, em qualquer linguagem de programação, fazemos referência à Teoria dos conjuntos da matemática
 # Em python, os conjuntos chamam-se Sets
 # Sets(conjuntos) não possuem valores duplicado
 # Sets(conjuntos) não possuem valores ordenados
@@ -12,6 +12,7 @@
 # Um dicionário possue chave:valor, Sets apenas possuem valores
 
 # Definindo um Set:
+"""
 
 # Forma 1:
 # Mesmo com duplicidade de dados, quando criado, o conjunto retirará os itens duplicados
