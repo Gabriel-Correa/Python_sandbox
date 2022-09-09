@@ -40,3 +40,12 @@ print (numeros_dobrados_loop)
 print([n*2 for n in numeros_loop])
 
 
+# É possível adicionar estruturas lógicas a este sistema:
+
+numeros_lógica = [1, 2, 3, 4, 5, 6]
+pares = [numero for numero in numeros_lógica if numero%2 == 0]
+impares = [numero for numero in numeros_lógica if numero%2 != 0]
+
+print(pares)
+print(impares)
+
